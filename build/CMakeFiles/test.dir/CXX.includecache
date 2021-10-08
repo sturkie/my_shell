@@ -6,7 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/Users/Sarah/Documents/Projects/my_shell/src/base.h
+string
+-
+
 /Users/Sarah/Documents/Projects/my_shell/src/operators.cpp
+operators.h
+/Users/Sarah/Documents/Projects/my_shell/src/operators.h
+unistd.h
+-
+stdio.h
+-
+sys/types.h
+-
+sys/wait.h
+-
+cstring
+-
+
+/Users/Sarah/Documents/Projects/my_shell/src/operators.h
+base.h
+/Users/Sarah/Documents/Projects/my_shell/src/base.h
+string
+-
 iostream
 -
 

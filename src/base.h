@@ -11,6 +11,6 @@ class Base {
         virtual void add_rhs(Base*) = 0;
         virtual bool isEmpty() = 0;
         virtual bool execute() = 0;
-}
+};
 
 #endif
