@@ -21,6 +21,8 @@ bool Operators::isEmpty(){
 }
 
 bool Operators::execute(){
+    bool result = true;
+    
     int t;
     char* args[128];
     int found = 0;
@@ -58,9 +60,6 @@ bool Operators::execute(){
     else{
         waitpid(-1, &t, 0);
         delete[] char_input;
-        if(t != 0){
-            return false;
-        }
     }
     return true;
 }

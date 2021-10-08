@@ -288,6 +288,33 @@ src/operators.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/operators.cpp.s
 .PHONY : src/operators.cpp.s
 
+unit_tests/unit_test.o: unit_tests/unit_test.cpp.o
+
+.PHONY : unit_tests/unit_test.o
+
+# target to build an object file
+unit_tests/unit_test.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/unit_tests/unit_test.cpp.o
+.PHONY : unit_tests/unit_test.cpp.o
+
+unit_tests/unit_test.i: unit_tests/unit_test.cpp.i
+
+.PHONY : unit_tests/unit_test.i
+
+# target to preprocess a source file
+unit_tests/unit_test.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/unit_tests/unit_test.cpp.i
+.PHONY : unit_tests/unit_test.cpp.i
+
+unit_tests/unit_test.s: unit_tests/unit_test.cpp.s
+
+.PHONY : unit_tests/unit_test.s
+
+# target to generate assembly for a file
+unit_tests/unit_test.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/unit_tests/unit_test.cpp.s
+.PHONY : unit_tests/unit_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -312,6 +339,9 @@ help:
 	@echo "... src/operators.o"
 	@echo "... src/operators.i"
 	@echo "... src/operators.s"
+	@echo "... unit_tests/unit_test.o"
+	@echo "... unit_tests/unit_test.i"
+	@echo "... unit_tests/unit_test.s"
 .PHONY : help
 
 

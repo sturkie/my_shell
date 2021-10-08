@@ -12,12 +12,7 @@ add_lhs(Base*) and add_rhs(Base*) provide functionality only in future And/Or/Se
 
 
 ========================
-TESTCOMMAND.H
+OPERATORS
 ========================
-testCommand inherits from Base and additional variables
 
-const char* char_input is a parameter for the stat(const char, struct stat); function
-
-fileFlag accounts for -e, -f, -d from the user_input and uses addFlag(string) function in parse.cpp
-
-testCommand has a unique execute(). It creates a struct stat and calls the stat(const char, struct stat) function. It outputs true or false to the console and returns a corresponding true/false boolean
+Operators is used after the user input line is parsed. It converts the command input into a c string to be used in an args array. Using args, we fork and execute the command.
