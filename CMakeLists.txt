@@ -1,0 +1,16 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.14)
+
+ADD_SUBDIRECTORY(googletest)
+
+SET(CMAKE_CXX_STANDARD 11)
+
+ADD_EXECUTABLE(test
+    src/operators.cpp
+)
+
+ADD_EXECUTABLE(my_shell
+    src/main.cpp
+)
+
+TARGET_LINK_LIBRARIES(test gtest)
+TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)
