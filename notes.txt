@@ -1,0 +1,23 @@
+These are the notes for project my_shell.
+This notes.txt file serves as an outline for each file of the project.
+
+
+========================
+BASE.H
+========================
+
+base.h serves as the component. We branch command and operators off of Base objects. It contains the virtual functions add_lhs(Base*), add_rhs(Base*), isEmpty(), and execute() for its children to inherit.
+
+add_lhs(Base*) and add_rhs(Base*) provide functionality only in future And/Or/Semicolon implementations
+
+
+========================
+TESTCOMMAND.H
+========================
+testCommand inherits from Base and additional variables
+
+const char* char_input is a parameter for the stat(const char, struct stat); function
+
+fileFlag accounts for -e, -f, -d from the user_input and uses addFlag(string) function in parse.cpp
+
+testCommand has a unique execute(). It creates a struct stat and calls the stat(const char, struct stat) function. It outputs true or false to the console and returns a corresponding true/false boolean
