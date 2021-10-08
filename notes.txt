@@ -16,3 +16,7 @@ OPERATORS
 ========================
 
 Operators is used after the user input line is parsed. It converts the command input into a c string to be used in an args array. Using args, we fork and execute the command.
+
+//TODO:
+	- implement main.cpp functionality
+	- add And/Or/Semicolon support
