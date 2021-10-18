@@ -4,7 +4,7 @@
 using namespace std;
 
 string parse(string user_input){
-    string command_input;
+    string command_input = user_input;
     
     for(int i = 0; i < user_input.length(); i++){
         if(user_input.at(i) == '#'){

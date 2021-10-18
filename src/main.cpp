@@ -28,6 +28,5 @@ int main(){
             cmd->execute();
         }
     }
-    cout << "Exiting my_shell\n";
     return 0;
 }
