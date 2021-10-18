@@ -20,3 +20,9 @@ Operators is used after the user input line is parsed. It converts the command i
 //TODO:
 	- implement main.cpp functionality
 	- add And/Or/Semicolon support
+
+========================
+MAIN
+========================
+
+Main outputs '$' and seeks user input of a command. The input string is then handled in a parse() function and then the parsed output is sent to execute_command function. A new Command object is created with the parsed output and is executed appropriately. 
