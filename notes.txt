@@ -17,12 +17,20 @@ OPERATORS
 
 Operators is used after the user input line is parsed. It converts the command input into a c string to be used in an args array. Using args, we fork and execute the command. Works with flags (i.e. ls -a).
 
-//TODO:
-	- implement main.cpp functionality
-	- add And/Or/Semicolon support
 
 ========================
 MAIN
 ========================
 
 Main outputs '$' and seeks user input of a command. The input string is then handled in a parse() function and then the parsed output is sent to execute_command function. A new Command object is created with the parsed output and is executed appropriately. 
+
+
+========================
+AND
+========================
+And constructs a Base* lhs and Base* rhs and in its execute() will ensure the lhs->execute() and rhs->execute() return true otherwise the whole And operation returns false.
+
+
+//TODO:
+	- allow there to be a false result of execution if the command is not found
+	- add And/Or/Semicolon support
