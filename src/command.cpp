@@ -24,6 +24,7 @@ bool Command::execute(){
     bool result = true;
     
     int t;
+    int status;
     char* args[128];
     int found = 0;
     string sub;
@@ -43,19 +44,23 @@ bool Command::execute(){
     pid_t pid = fork();
     if(pid == 0){
         if(execvp(args[0], args) == -1){
-            perror("Error executing");
+            perror("Error in execution");
+            return false;
             exit(-1);
         }
     }
     if(pid > 0){
-        if(wait(0) == -1){
+        if(waitpid(pid, &status, WUNTRACED | WCONTINUED) == -1){
             perror("Error in child");
+            return false;
             exit(-1);
         }
     }
-    if(pid ==  -1){
-        perror("Error forking");
+    if(pid ==  -1){ //change this to <0 to help you
+        //perror("Error forking");
+        return false;
         exit(-1);
+    
     }
     else{
         waitpid(-1, &t, 0);

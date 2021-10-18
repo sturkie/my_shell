@@ -32,13 +32,13 @@ TEST(CommandTest, lsflagTest){
     EXPECT_EQ(true, commandTest->execute());
 }
 
-/*
-Unable to implement a correct false result
+
+//Unable to implement a correct false result
 TEST(CommandTest, fakeTest){
     Base* commandTest = new Command("fake");
     EXPECT_EQ(false, commandTest->execute());
 }
-*/
+
 
 int main(int argc, char **argv){
     ::testing::InitGoogleTest(&argc,argv);
