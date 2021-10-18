@@ -11,6 +11,7 @@ ADD_EXECUTABLE(test
 
 ADD_EXECUTABLE(my_shell
     src/main.cpp
+    src/command.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

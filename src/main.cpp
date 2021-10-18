@@ -1,6 +1,7 @@
 #include<iostream>
 
 #include "parse.cpp"
+#include "base.h"
 #include "command.h"
 
 
@@ -19,8 +20,12 @@ int main(){
             exit = true;
         }
         else{
-            //Parsing through string
+            //Parsing through string, handled in parse.cpp
             command_input = parse(user_input);
+            
+            //execute command
+            Base* cmd = new Command(command_input);
+            cmd->execute();
         }
     }
     cout << "Exiting my_shell\n";
