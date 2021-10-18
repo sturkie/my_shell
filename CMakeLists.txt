@@ -6,7 +6,7 @@ SET(CMAKE_CXX_STANDARD 11)
 
 ADD_EXECUTABLE(test
     unit_tests/unit_test.cpp
-    src/operators.cpp
+    src/command.cpp
 )
 
 ADD_EXECUTABLE(my_shell

@@ -15,7 +15,7 @@ add_lhs(Base*) and add_rhs(Base*) provide functionality only in future And/Or/Se
 OPERATORS
 ========================
 
-Operators is used after the user input line is parsed. It converts the command input into a c string to be used in an args array. Using args, we fork and execute the command.
+Operators is used after the user input line is parsed. It converts the command input into a c string to be used in an args array. Using args, we fork and execute the command. Works with flags (i.e. ls -a).
 
 //TODO:
 	- implement main.cpp functionality

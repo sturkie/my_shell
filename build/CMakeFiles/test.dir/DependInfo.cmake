@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Sarah/Documents/Projects/my_shell/src/operators.cpp" "/Users/Sarah/Documents/Projects/my_shell/build/CMakeFiles/test.dir/src/operators.cpp.o"
+  "/Users/Sarah/Documents/Projects/my_shell/src/command.cpp" "/Users/Sarah/Documents/Projects/my_shell/build/CMakeFiles/test.dir/src/command.cpp.o"
   "/Users/Sarah/Documents/Projects/my_shell/unit_tests/unit_test.cpp" "/Users/Sarah/Documents/Projects/my_shell/build/CMakeFiles/test.dir/unit_tests/unit_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")

@@ -234,6 +234,33 @@ gtest/fast:
 	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+src/command.o: src/command.cpp.o
+
+.PHONY : src/command.o
+
+# target to build an object file
+src/command.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/command.cpp.o
+.PHONY : src/command.cpp.o
+
+src/command.i: src/command.cpp.i
+
+.PHONY : src/command.i
+
+# target to preprocess a source file
+src/command.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/command.cpp.i
+.PHONY : src/command.cpp.i
+
+src/command.s: src/command.cpp.s
+
+.PHONY : src/command.s
+
+# target to generate assembly for a file
+src/command.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/command.cpp.s
+.PHONY : src/command.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -260,33 +287,6 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/my_shell.dir/build.make CMakeFiles/my_shell.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
-
-src/operators.o: src/operators.cpp.o
-
-.PHONY : src/operators.o
-
-# target to build an object file
-src/operators.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/operators.cpp.o
-.PHONY : src/operators.cpp.o
-
-src/operators.i: src/operators.cpp.i
-
-.PHONY : src/operators.i
-
-# target to preprocess a source file
-src/operators.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/operators.cpp.i
-.PHONY : src/operators.cpp.i
-
-src/operators.s: src/operators.cpp.s
-
-.PHONY : src/operators.s
-
-# target to generate assembly for a file
-src/operators.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/operators.cpp.s
-.PHONY : src/operators.cpp.s
 
 unit_tests/unit_test.o: unit_tests/unit_test.cpp.o
 
@@ -333,12 +333,12 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... src/command.o"
+	@echo "... src/command.i"
+	@echo "... src/command.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/operators.o"
-	@echo "... src/operators.i"
-	@echo "... src/operators.s"
 	@echo "... unit_tests/unit_test.o"
 	@echo "... unit_tests/unit_test.i"
 	@echo "... unit_tests/unit_test.s"

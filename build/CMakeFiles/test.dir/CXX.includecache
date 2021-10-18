@@ -336,7 +336,21 @@ acxx_demangle.h
 string
 -
 
-/Users/Sarah/Documents/Projects/my_shell/src/operators.h
+/Users/Sarah/Documents/Projects/my_shell/src/command.cpp
+command.h
+/Users/Sarah/Documents/Projects/my_shell/src/command.h
+unistd.h
+-
+stdio.h
+-
+sys/types.h
+-
+sys/wait.h
+-
+cstring
+-
+
+/Users/Sarah/Documents/Projects/my_shell/src/command.h
 base.h
 /Users/Sarah/Documents/Projects/my_shell/src/base.h
 string
@@ -351,6 +365,6 @@ gtest/gtest.h
 /Users/Sarah/Documents/Projects/my_shell/src/base.h
 string
 -
-../src/operators.h
-/Users/Sarah/Documents/Projects/my_shell/src/operators.h
+../src/command.h
+/Users/Sarah/Documents/Projects/my_shell/src/command.h
 

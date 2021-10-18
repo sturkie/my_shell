@@ -6,32 +6,37 @@
 
 using namespace std;
 
-#include "../src/operators.h"
-TEST(OperatorsTest, lsTest){
-    Base* operatorsTest = new Operators("ls");
-    EXPECT_EQ(true, operatorsTest->execute());
+#include "../src/command.h"
+TEST(CommandTest, lsTest){
+    Base* commandTest = new Command("ls");
+    EXPECT_EQ(true, commandTest->execute());
 }
 
-TEST(OperatorsTest, dateTest){
-    Base* operatorsTest = new Operators("date");
-    EXPECT_EQ(true, operatorsTest->execute());
+TEST(CommandTest, dateTest){
+    Base* commandTest = new Command("date");
+    EXPECT_EQ(true, commandTest->execute());
 }
 
-TEST(OperatorsTest, calTest){
-    Base* operatorsTest = new Operators("cal");
-    EXPECT_EQ(true, operatorsTest->execute());
+TEST(CommandTest, calTest){
+    Base* commandTest = new Command("cal");
+    EXPECT_EQ(true, commandTest->execute());
 }
 
-TEST(OperatorsTest, whoamiTest){
-    Base* operatorsTest = new Operators("whoami");
-    EXPECT_EQ(true, operatorsTest->execute());
+TEST(CommandTest, whoamiTest){
+    Base* commandTest = new Command("whoami");
+    EXPECT_EQ(true, commandTest->execute());
+}
+
+TEST(CommandTest, lsflagTest){
+    Base* commandTest = new Command("ls -a");
+    EXPECT_EQ(true, commandTest->execute());
 }
 
 /*
 Unable to implement a correct false result
-TEST(OperatorsTest, fakeTest){
-    Base* operatorsTest = new Operators("fake");
-    EXPECT_EQ(false, operatorsTest->execute());
+TEST(CommandTest, fakeTest){
+    Base* commandTest = new Command("fake");
+    EXPECT_EQ(false, commandTest->execute());
 }
 */
 

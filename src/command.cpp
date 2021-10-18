@@ -1,4 +1,4 @@
-#include "operators.h"
+#include "command.h"
 
 #include<unistd.h>
 #include<stdio.h>
@@ -8,19 +8,19 @@
 
 using namespace std;
 
-Operators::Operators(){
+Command::Command(){
     this->command = "";
 }
 
-Operators::Operators(string input){
+Command::Command(string input){
     this->command = input;
 }
 
-bool Operators::isEmpty(){
+bool Command::isEmpty(){
     return false;
 }
 
-bool Operators::execute(){
+bool Command::execute(){
     bool result = true;
     
     int t;

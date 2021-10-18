@@ -1,5 +1,5 @@
-#ifndef OPERATORS_H
-#define OPERATORS_H
+#ifndef COMMAND_H
+#define COMMAND_H
 
 #include "base.h"
 #include <string>
@@ -7,10 +7,10 @@
 
 using namespace std;
 
-class Operators : public Base{
+class Command : public Base{
     public:
-        Operators();
-        Operators(string);
+        Command();
+        Command(string);
         string command;
         void add_lhs(Base*){};
         void add_rhs(Base*){};

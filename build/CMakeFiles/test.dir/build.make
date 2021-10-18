@@ -70,29 +70,29 @@ CMakeFiles/test.dir/unit_tests/unit_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/unit_tests/unit_test.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Sarah/Documents/Projects/my_shell/unit_tests/unit_test.cpp -o CMakeFiles/test.dir/unit_tests/unit_test.cpp.s
 
-CMakeFiles/test.dir/src/operators.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/operators.cpp.o: ../src/operators.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Sarah/Documents/Projects/my_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/operators.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/operators.cpp.o -c /Users/Sarah/Documents/Projects/my_shell/src/operators.cpp
+CMakeFiles/test.dir/src/command.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/command.cpp.o: ../src/command.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Sarah/Documents/Projects/my_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/command.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/command.cpp.o -c /Users/Sarah/Documents/Projects/my_shell/src/command.cpp
 
-CMakeFiles/test.dir/src/operators.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/operators.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Sarah/Documents/Projects/my_shell/src/operators.cpp > CMakeFiles/test.dir/src/operators.cpp.i
+CMakeFiles/test.dir/src/command.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/command.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Sarah/Documents/Projects/my_shell/src/command.cpp > CMakeFiles/test.dir/src/command.cpp.i
 
-CMakeFiles/test.dir/src/operators.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/operators.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Sarah/Documents/Projects/my_shell/src/operators.cpp -o CMakeFiles/test.dir/src/operators.cpp.s
+CMakeFiles/test.dir/src/command.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/command.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Sarah/Documents/Projects/my_shell/src/command.cpp -o CMakeFiles/test.dir/src/command.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/unit_tests/unit_test.cpp.o" \
-"CMakeFiles/test.dir/src/operators.cpp.o"
+"CMakeFiles/test.dir/src/command.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
 test: CMakeFiles/test.dir/unit_tests/unit_test.cpp.o
-test: CMakeFiles/test.dir/src/operators.cpp.o
+test: CMakeFiles/test.dir/src/command.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: lib/libgtest.a
 test: CMakeFiles/test.dir/link.txt
