@@ -1,5 +1,8 @@
 #include<iostream>
+
 #include "parse.cpp"
+#include "command.h"
+
 
 using namespace std;
 
@@ -7,6 +10,7 @@ int main(){
     
     bool exit = false;
     string user_input = "";
+    string command_input = "";
     
     while(!exit){
         cout << "$ ";
@@ -16,6 +20,7 @@ int main(){
         }
         else{
             //Parsing through string
+            command_input = parse(user_input);
         }
     }
     cout << "Exiting my_shell\n";
