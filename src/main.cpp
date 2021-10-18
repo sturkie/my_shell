@@ -7,6 +7,12 @@
 
 using namespace std;
 
+//execute command
+void execute_command(string i){
+    Base* cmd = new Command(i);
+    cmd->execute();
+}
+
 int main(){
     
     bool exit = false;
@@ -24,8 +30,7 @@ int main(){
             command_input = parse(user_input);
             
             //execute command
-            Base* cmd = new Command(command_input);
-            cmd->execute();
+            execute_command(command_input);
         }
     }
     return 0;
